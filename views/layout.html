@@ -109,5 +109,72 @@ ICP经营许可证粤B2-20140279 | 中国互联网违法信息举报中心 | 中
 		</p>
 	</div>
 </footer>
+<div id="fix">
+	<ul>
+		<li><a href="">
+			<i class="fa fa-wechat"></i>
+		</a>
+			<p>
+				<img src="/img/weixin2.jpg" alt="">
+			</p>
+		</li>
+		<li><a href="">
+			<i class="fa fa-qq"></i>
+				<p style="height:100%;text-align:center;padding-top:18px;">在线客服</p>
+		</a></li>
+		<li><a href="">
+			<i class="fa fa-phone" style="padding-left: 5px;"></i>
+			<p style="height:100%;text-align:center;padding-top:10px;">13232323232 <br>(陈先生)</p>
+		</a></li>
+		<li class="to-top"><a href="">
+			<i class="fa fa-angle-up fa-lg" style="padding-left: 7px;"></i>
+			<p style="height:100%;text-align:center;padding-top:18px;">滑到顶部</p>
+		</a></li>
+	</ul>	
+	<script>
+		$('#fix li').hover(function() {
+			/* Stuff to do when the mouse enters the element */
+			$(this).css('background-color', ' #FF8680');
+			$(this).find('p').css('opacity', 1);
+		}, function() {
+			/* Stuff to do when the mouse leaves the element */
+			$(this).css('background-color', '  #FFDED8');
+				$(this).find('p').css('opacity', 0);
+		});
+
+			// 滚动条低于100px出现右边联系
+		$(function () {
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 50) {
+                    $("#fix").fadeIn(500);
+                } else {
+                    $("#fix").fadeOut(500);
+                }
+            });
+
+            $("#fix .to-top").click(function () {
+                $('body,html').animate({ scrollTop: 0 }, 1000);
+                return false;
+            });
+        });
+	</script>
+</div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
